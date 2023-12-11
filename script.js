@@ -1,4 +1,8 @@
-const gifList = ['image1.gif', 'image2.gif', 'image3.gif']; // Add more as needed
+const gifList = [
+    'https://raw.githubusercontent.com/Shayan-Nawab/shayan/main/Images/lain_1.gif', 
+    'https://raw.githubusercontent.com/Shayan-Nawab/shayan/main/Images/Yume_1.gif'
+    // Add more URLs as needed
+];
 
 function getRandomGif() {
     const randomIndex = Math.floor(Math.random() * gifList.length);
@@ -6,7 +10,7 @@ function getRandomGif() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('randomGif').src = 'Images/' + getRandomGif();
+    document.getElementById('randomGif').src = getRandomGif();
 });
 
 let fourPressed = false;
