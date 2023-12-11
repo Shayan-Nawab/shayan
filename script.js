@@ -2,7 +2,7 @@ let lastKeyPressed = '';
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'w') {
-        window.open('https://wikipedia.org/', '_blank');
+        window.location.href = 'https://wikipedia.org/';
     } else if (event.key === '4') {
         if (event.ctrlKey) {
             window.open('https://tetris.com/', '_blank');
